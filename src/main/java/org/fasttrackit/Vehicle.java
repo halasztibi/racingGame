@@ -27,7 +27,10 @@ public class Vehicle {
 
         return accelerate(speed, 1);
 
-    }
+
+
+        }
+
         public String getName(){
             return name;
 

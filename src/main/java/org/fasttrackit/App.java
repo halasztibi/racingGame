@@ -67,7 +67,7 @@ public class App {
         //The type of the variable does Not determine the object's behaviour
         ufo.accelerate(200, 2 );
 
-        //The type of the variable determines what methods can invoked
+        //The type of the variable determines what methods can be invoked
         //We might need type casting (see below)
         ((UFO) ufo).concealCheating();
 

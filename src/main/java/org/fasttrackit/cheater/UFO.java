@@ -19,7 +19,8 @@ public class UFO extends Vehicle{
         System.out.println("i;m not cheating");
 
     }
-
+    //example of co-variant return type
+    //example of extending acces prieleges in overriden method
 
 
 }
