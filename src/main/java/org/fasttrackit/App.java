@@ -1,16 +1,22 @@
 package org.fasttrackit;
 
+import org.fasttrackit.cheater.UFO;
+
 /**
  * Hello world!
  */
 public class App {
     public static void main(String[] args) {
-//    Car car = new  Car();
-//      car.name = "Dacia";
-//      car.color = "white";
-//      car.doorCount = 4;
-//      car.mileage = 7.5;
-//      car.running = true;
+    Engine engine = new Engine();
+    engine.manufacturer = "Renalut";
+    engine.capacity = 1500;
+
+    Car car = new  Car();
+      car.name = "Dacia";
+      car.color = "white";
+      car.doorCount = 4;
+      car.mileage = 7.5;
+      car.running = true;
 //
 //      Engine engine = new Engine();
 //      engine.manufacturer = "Renault";
@@ -50,7 +56,10 @@ public class App {
 
         //example of invoking overloaded methods
         vehicle1.accelerate(34.12);
-        vehicle2.accelerate(23);
+        vehicle2.accelerate(100, 2);
 
+        new UFO().accelerate(100, 2);
+
+        System.out.println(car);
     }
 }
