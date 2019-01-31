@@ -8,6 +8,10 @@ public class Vehicle {
     private String name;
     private String color;
     private double mileage;
+    private double fuelLevel;
+    private double totalTraveledDistance;
+
+
 
     public Vehicle() {
         vehicleCount++;
@@ -19,9 +23,23 @@ public class Vehicle {
         double travelDistance = speed + durationInHours;
 
         System.out.println("Travel Distance" + travelDistance + "km");
+
+
+//        totalTraveledDistance = totalTraveledDistance + travelDistance;
+        totalTraveledDistance += travelDistance;
+        System.out.println("Total Traveled Distance =" + totalTraveledDistance);
+
+        double spentFuel = travelDistance * mileage / 100 ;
+        fuelLevel -= spentFuel;
+        System.out.println("Remaining fuel" + fuelLevel);
+
+        fuelLevel++;
+
+
         return travelDistance;
 
     }
+
 //example of method overloading
     public double accelerate(double speed) {
 
@@ -35,6 +53,10 @@ public class Vehicle {
             return name;
 
         }
+
+
+
+
 
     @Override
     public String toString() {
